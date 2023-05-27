@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #amount-input {
+            margin-bottom: 10px;
+        }
+        #from-currency,
+        #to-currency {
+            margin-bottom: 10px;
+        }
+        #convert-btn {
+            display: block;
+            margin: 0 auto;
+        }
+        #result {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <input type="number" id="amount-input" placeholder="Enter amount">
+        <label for="from-currency">From</label>
+        <select id="from-currency"></select>
+        <label for="to-currency">To</label>
+        <select id="to-currency"></select>
+        <button id="convert-btn">Convert</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

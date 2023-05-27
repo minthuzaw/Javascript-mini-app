@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #question {
+            margin-bottom: 10px;
+        }
+        #choices {
+            list-style: none;
+            padding: 0;
+        }
+        .choice {
+            margin-bottom: 5px;
+        }
+        .choice input {
+            margin-right: 5px;
+        }
+        .submit-btn {
+            display: block;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+        <p id="question"></p>
+        <ul id="choices"></ul>
+        <button class="submit-btn" onclick="checkAnswer()">Submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
